@@ -1,0 +1,34 @@
+{
+  "name": "firestore-db",
+  "version": "1.0.1",
+  "description": "A Simple Tool for Cloud Firestore and Firebase Realtime Database.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "eslint ./",
+    "build": "eslint --fix src/"
+  },
+  "keywords": [
+    "firestore-db",
+    "firebase-connect"
+  ],
+  "author": "SUVAJIT (esuvajit@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "firebase-admin": "^8.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.2.1",
+    "eslint-config-aqua": "^6.0.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csuvajit/firebase-db.git"
+  },
+  "bugs": {
+    "url": "https://github.com/csuvajit/firebase-db/issues"
+  },
+  "homepage": "https://github.com/csuvajit/firebase-db#readme"
+}
