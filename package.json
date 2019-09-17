@@ -4,13 +4,13 @@
   "description": "Simple tool for cloud firestore and firebase realtime database.",
   "main": "src/index.js",
   "scripts": {
-    "test": "eslint ./",
+    "test": "eslint src/",
     "build": "eslint --fix src/"
   },
   "keywords": [
     "firestore-db"
   ],
-  "author": "SUVAJIT (esuvajit@gmail.com)",
+  "author": "SUVAJIT (suvajit.me@gmail.com)",
   "license": "MIT",
   "dependencies": {
     "firebase-admin": "^8.4.0"
