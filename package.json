@@ -1,6 +1,6 @@
 {
   "name": "firestore-db",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple tool for cloud firestore and firebase realtime database.",
   "main": "src/index.js",
   "scripts": {
