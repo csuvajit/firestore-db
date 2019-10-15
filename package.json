@@ -1,11 +1,11 @@
 {
   "name": "firestore-db",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple tool for cloud firestore and firebase realtime database.",
   "main": "src/index.js",
   "scripts": {
     "test": "eslint src/",
-    "build": "eslint --fix src/"
+    "lint": "eslint --fix src/"
   },
   "keywords": [
     "firestore-db"
@@ -17,10 +17,7 @@
   },
   "devDependencies": {
     "eslint": "^6.2.1",
-    "eslint-config-super": "^1.0.0"
-  },
-  "directories": {
-    "test": "test"
+    "eslint-config-mars": "^1.0.1"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,4 @@
-const firebase = require('firebase-admin');
+const firebaseAdmin = require('firebase-admin');
 
 class Firebase {
 	constructor(option) {
@@ -7,8 +7,8 @@ class Firebase {
 			throw new Error('cannot make a connection without "projectId", "clientEmail", "privateKey"');
 		}
 
-		const firebaseApp = firebase.initializeApp({
-			credential: firebase.credential.cert({
+		const firebaseApp = firebaseAdmin.initializeApp({
+			credential: firebaseAdmin.credential.cert({
 				projectId: option.projectId,
 				clientEmail: option.clientEmail,
 				privateKey: option.privateKey.replace(/\\n/g, '\n')
@@ -17,8 +17,18 @@ class Firebase {
 		});
 
 		this.firebase = firebaseApp;
-		this.realtime = firebaseApp.database();
-		this.firestore = firebaseApp.firestore();
+	}
+
+	firebaseApp() {
+		return this.firebase;
+	}
+
+	database() {
+		return this.firebase.database();
+	}
+
+	firestore() {
+		return this.firebase.firestore();
 	}
 }
 
