@@ -6,8 +6,8 @@
   "author": "SUVAJIT (suvajit.me@gmail.com)",
   "license": "MIT",
   "scripts": {
-    "test": "eslint src/",
-    "lint": "eslint --fix src/"
+    "test": "eslint --ext .js --ignore-path .gitignore .",
+    "lint": "eslint --fix --ext .js --ignore-path .gitignore ."
   },
   "dependencies": {
     "firebase-admin": "^8.4.0"
