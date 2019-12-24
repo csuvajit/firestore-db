@@ -1,6 +1,6 @@
 {
   "name": "firestore-db",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple tool for cloud firestore and firebase realtime database.",
   "main": "src/index.js",
   "author": "SUVAJIT (suvajit.me@gmail.com)",
@@ -21,10 +21,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/csuvajit/firestore-db.git"
+    "url": "git+https://github.com/ndency/firestore-db.git"
   },
   "bugs": {
-    "url": "https://github.com/csuvajit/firestore-db/issues"
+    "url": "https://github.com/ndency/firestore-db/issues"
   },
-  "homepage": "https://github.com/csuvajit/firestore-db#readme"
+  "homepage": "https://github.com/ndency/firestore-db#readme"
 }
