@@ -1,6 +1,12 @@
+# Node modules.
 node_modules/
 
+# Lock files.
 package-lock.json
 yarn.lock
 
+# Compiled Javascript files.
+dist/
+
+# Environment vairables.
 .env
