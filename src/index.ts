@@ -1,7 +1,15 @@
-const firebaseAdmin = require('firebase-admin');
+import firebaseAdmin from 'firebase-admin';
+
+type InitOptions = {
+	projectId: string;
+	clientEmail: string;
+	privateKey: string;
+	databaseURL?: string;
+};
 
 class Firebase {
-	constructor(option) {
+	firebase: firebaseAdmin.app.App;
+	constructor(option: InitOptions) {
 		if (!option) throw new Error('cannot make a connection without credentials');
 		if (!option.projectId || !option.clientEmail || !option.privateKey) {
 			throw new Error('cannot make a connection without "projectId", "clientEmail", "privateKey"');
@@ -11,9 +19,9 @@ class Firebase {
 			credential: firebaseAdmin.credential.cert({
 				projectId: option.projectId,
 				clientEmail: option.clientEmail,
-				privateKey: option.privateKey.replace(/\\n/g, '\n')
+				privateKey: option.privateKey.replace(/\\n/g, '\n'),
 			}),
-			databaseURL: option.databaseURL || `https://${option.projectId}.firebaseio.com`
+			databaseURL: option.databaseURL || `https://${option.projectId}.firebaseio.com`,
 		});
 
 		this.firebase = firebaseApp;
@@ -32,4 +40,4 @@ class Firebase {
 	}
 }
 
-module.exports = Firebase;
+export default Firebase;

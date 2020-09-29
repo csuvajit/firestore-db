@@ -1,33 +1,36 @@
 {
-  "name": "firestore-db",
-  "version": "1.0.5",
-  "description": "Simple tool for cloud firestore and firebase realtime database.",
-  "main": "src/index.js",
-  "author": {
-    "name": "SUVAJIT",
-    "email": "suvajit.me@gmail.com"
-  },
-  "license": "MIT",
-  "scripts": {
-    "test": "eslint --ext .js --ignore-path .gitignore .",
-    "lint": "eslint --fix --ext .js --ignore-path .gitignore ."
-  },
-  "dependencies": {
-    "firebase-admin": "^9.2.0"
-  },
-  "devDependencies": {
-    "eslint": "^7.10.0",
-    "eslint-config-mars": "^1.0.7"
-  },
-  "keywords": [
-    "firestore-db"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/csuvajit/firestore-db.git"
-  },
-  "bugs": {
-    "url": "https://github.com/csuvajit/firestore-db/issues"
-  },
-  "homepage": "https://github.com/csuvajit/firestore-db#readme"
+	"name": "firestore-db",
+	"version": "2.0.0",
+	"description": "Simple tool for cloud firestore and firebase realtime database.",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"author": {
+		"name": "SUVAJIT",
+		"email": "suvajit.me@gmail.com"
+	},
+	"license": "MIT",
+	"scripts": {
+		"prepublish": "tsc",
+		"test": "eslint --ext .js --ignore-path .gitignore .",
+		"lint": "eslint --fix --ext .js --ignore-path .gitignore ."
+	},
+	"dependencies": {
+		"firebase-admin": "^9.2.0"
+	},
+	"devDependencies": {
+		"eslint": "^7.10.0",
+		"eslint-config-mars": "^1.0.7",
+		"typescript": "^4.0.3"
+	},
+	"keywords": [
+		"firestore-db"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/csuvajit/firestore-db.git"
+	},
+	"bugs": {
+		"url": "https://github.com/csuvajit/firestore-db/issues"
+	},
+	"homepage": "https://github.com/csuvajit/firestore-db#readme"
 }
